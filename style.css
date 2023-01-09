@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+body{
+    padding:0 ;
+    margin: 0;
+    background: linear-gradient(#4cd137 10%, #ffffff 90%);
+}
+
+/*--Top Container is the Welcome screem--*/
+ .top-container{    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+ }
+
+ .top-container h1{
+    font-size: 7.0rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif ;
+    letter-spacing: 2px; 
+    color: #ffffff;
+ }
+/*--------------------------------------*/
+
+.bottom-container{
+   padding: 0 50px;
+}
+ .text__bottom{
+    margin: 50px 5%;
+    font-size: 2.0rem;
+ }
+
+ /*--        Navigation Bar          --*/
+
+ .navbar{
+    position: fixed;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    width: 100%;
+
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    transition: 1.3s;
+ }
+ .navbar img{
+   margin-left: 50px;
+ }
+
+ .navbar ul{
+    position: relative;
+    margin: 10px;
+    padding-right:50px ;    
+    display: flex;
+    align-items: center;
+
+    list-style-type: none;
+ }
+ .navbar ul li{
+    max-width: 80px;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+ }
+
+ .navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: #4cd137;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    transition: 0.2s;
+    
+ }
+
+ .navbar ul li a:hover{
+    font-size: 1.8rem ;
+ }
+/*---------------------------------*/
+/*--    NavBar--Search field    --*/
+
+.search-field{
+    padding: 7px; /*atenção*/
+    background-color: #4cd137;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.search-btn{
+    
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+
+    color: #4cd137; 
+    border-radius: 50%;
+    background: #ffffff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+
+    text-decoration: none;
+}
+
+.search-text{
+    border: none;
+    background:none;
+    outline: none;
+
+    padding: 0;
+    color: #ffffff;
+    font-size: 1.6rem;
+    transition: 0.4s;
+    line-height: 40px;
+    max-width: 240px;
+    width: 0px;
+}
+
+.search-text::placeholder{
+    color: #ffffff;
+}
+
+.search-field:hover > .search-text {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-field:hover > .search-btn {
+    background: #4cd137;
+    color: #ffffff;
+}
+/*--------------------------------------*/
+/*--           Active Class           --*/
+
+.navbar.active{
+    background-color: #4cd137;
+ }
+
+ .navbar.active ul li a{
+    color: #ffffff;
+ }
+
+ .search-field.active{
+   background-color: #ffffff;
+} 
+
+.search-field.active .search-btn{
+   background-color: #4cd137;
+   color: #ffffff;
+}
+
+.search-field.active .search-text::placeholder{
+   color: #4cd137;
+}
+.search-field.active .search-text{
+   color: #4cd137;
+}
+
+/*----------------------------------------*/
