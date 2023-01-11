@@ -5,6 +5,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 
 }
 
@@ -15,6 +16,21 @@ body{
 }
 
 /*--Top Container is the Welcome screem--*/
+.scroll-to-top{
+   position: fixed;
+   bottom: 15px;
+   right: 30px;
+   font-size: 3.5rem;
+   transition: 0.6s;
+   cursor: pointer;
+   color: #ffffff
+}
+
+.scroll-to-top:hover{
+   color: #236319;
+   font-size: 5.5rem;
+}
+
  .top-container{    
     height: 100vh;
     display: flex;
@@ -153,6 +169,14 @@ body{
 
  .navbar.active ul li a{
     color: #ffffff;
+ }
+
+ .scroll-to-top.active{
+   color: #4cd137;
+ }
+ 
+ .scroll-to-top.active:hover{
+   color: #236319;
  }
 
  .search-field.active{
